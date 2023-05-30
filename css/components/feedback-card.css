@@ -1,0 +1,42 @@
+.feedback-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 90px;
+  width: 760px;
+  height: 420px;
+  background-color: #e2eef3;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.feedback-card .feedback {
+  margin-bottom: 50px;
+  font-family: 'Roboto';
+  font-size: 28px;
+  line-height: 37.5px;
+}
+
+.feedback-card .img {
+  width: 72px;
+  height: 72px;
+  margin-bottom: 23px;
+}
+
+.feedback-card .title {
+  margin-bottom: 7px;
+  font-size: 19px;
+  line-height: 28.8px;
+  font-family: 'Plus Jakarta Sans';
+}
+
+.feedback-card .position {
+  margin-bottom: 14px;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.feedback-card .link {
+  font-size: 16px;
+  line-height: 18.4px;
+}

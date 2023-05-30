@@ -1,0 +1,9 @@
+.wrap-container {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.wrap-container > .desc {
+  padding-left: 20%;
+  padding-right: 20%;
+}

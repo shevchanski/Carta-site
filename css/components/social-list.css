@@ -1,0 +1,13 @@
+.social-list {
+  display: flex;
+  align-items: center;
+}
+
+.social-list .item {
+  width: 38px;
+  height: 38px;
+}
+
+.social-list .item:not(:last-child) {
+  margin-right: 15px;
+}

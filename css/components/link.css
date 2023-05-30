@@ -2,6 +2,7 @@
   font-size: 15px;
   line-height: 18px;
   font-weight: 400;
+  display: inline-block;
 }
 
 .link.btn-shape {
@@ -9,17 +10,27 @@
   width: 159px;
   background-color: #000;
   border-radius: 100px;
-  display: inline-block;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #fff;
-  vertical-align: middle;
-  line-height: 48px;
+  /* line-height: 48px; */
+}
+.link.btn-shape.white {
+  background-color: #fff;
+  color: #000;
 }
 
 .link .link-arrow {
-  margin-top: 11px;
-  margin-bottom: 11px;
+  /* margin-top: 11px;
+  margin-bottom: 11px; */
   margin-left: 10px;
   height: 18px;
   width: 23px;
+}
+
+.link.d-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
