@@ -13,3 +13,24 @@
   width: 441px;
   height: 331px;
 }
+
+@media screen and (max-width: 768px) {
+  .managment-section.section {
+    padding-top: 60px;
+    padding-bottom: 50px;
+    margin-bottom: 100px;
+  }
+  .managment-section.section > .title {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .managment-section.section {
+    padding-top: 80px;
+    padding-bottom: 90px;
+    margin-bottom: 135px;
+  }
+  .managment-section.section > .title {
+    margin-bottom: 50px;
+  }
+}

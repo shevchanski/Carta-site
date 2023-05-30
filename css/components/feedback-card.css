@@ -40,3 +40,29 @@
   font-size: 16px;
   line-height: 18.4px;
 }
+
+@media screen and (max-width: 768px) {
+  .feedback-card {
+    padding: 40px;
+    width: 80%;
+    height: auto;
+  }
+  .feedback-card .feedback {
+    margin-bottom: 30px;
+    font-size: 23px;
+    line-height: 35px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .feedback-card {
+    padding: 25px;
+    width: 100%;
+    height: auto;
+  }
+  .feedback-card .title {
+    margin-bottom: 7px;
+    font-size: 21px;
+    line-height: 28.8px;
+    font-family: 'Plus Jakarta Sans';
+  }
+}

@@ -3,14 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0"
+    />
     <title>carta</title>
     <link rel="stylesheet" href="./css/main.css" />
+    <script src="./js/main.js"></script>
   </head>
   <body>
     <div class="container">
       <header class="header">
-        <a href=""><img src="./img/svg/logo.svg" alt="" class="logo" /></a>
+        <div class="overlay"></div>
+        <a href="" class="logo"><img src="./img/svg/logo.svg" alt="" /></a>
         <nav class="nav">
           <ul class="list">
             <li class="item">
@@ -34,6 +39,11 @@
           <a href="" class="link">Sign In</a>
           <a href="" class="link btn-shape">Request a demo</a>
         </div>
+        <button class="nav-btn">
+          <span class="nav-btn-line"></span>
+          <span class="nav-btn-line"></span>
+          <span class="nav-btn-line"></span>
+        </button>
       </header>
 
       <section class="introduction-section section">
@@ -65,7 +75,7 @@
         </h2>
         <p class="quantity">2,201,980</p>
         <span class="quantity-label">Equity owners</span>
-        <ul class="ownership-list">
+        <ul class="brand-list">
           <li class="item">
             <img src="./img/svg/canva.svg" alt="" class="company-logo" />
           </li>
@@ -93,7 +103,7 @@
           business forward
         </h2>
         <div class="description-box wrap-container">
-          <div class="left-col info">
+          <div class="item info">
             <h3 class="h3 title">Equity Managment</h3>
             <p class="desc">
               Manage all things equity in one place, including cap tables,
@@ -109,7 +119,7 @@
               />
             </a>
           </div>
-          <div class="right-col">
+          <div class="item">
             <img src="./img/svg/managment.svg" alt="" class="img" />
           </div>
         </div>
@@ -223,7 +233,7 @@
           products to keep you moving forward.
         </p>
         <div class="description-box wrap-container">
-          <div class="left-col info">
+          <div class="item info">
             <h3 class="h3 title">Carta Total Compensation</h3>
             <p class="desc">
               Make responsible compensation decisions, stay on budget, and
@@ -231,7 +241,7 @@
               Carta Total Comp.
             </p>
           </div>
-          <div class="right-col">
+          <div class="item">
             <img src="./img/svg/futures.svg" alt="" class="img" />
           </div>
         </div>
@@ -330,43 +340,53 @@
               </li>
               <li class="item"><a href="" class="link">Startup Stack</a></li>
             </ul>
-            <ul class="footer-list">
-              <li class="item title">Company</li>
-              <li class="item"><a href="" class="link">About Us</a></li>
-              <li class="item"><a href="" class="link">Executive team</a></li>
-              <li class="item"><a href="" class="link">Careers</a></li>
-              <li class="item"><a href="" class="link">Press</a></li>
-              <li class="item">
-                <a href="" class="link">Support Documentation</a>
-              </li>
-              <li class="item">
-                <a href="" class="link">Product Release Notes</a>
-              </li>
-
-              <li class="item title">Legal</li>
-              <li class="item"><a href="" class="link">Privacy Policy</a></li>
-              <li class="item"><a href="" class="link">Cookie Policy</a></li>
-              <li class="item"><a href="" class="link">Legal Disclosure</a></li>
-              <li class="item"><a href="" class="link">Terms of Service</a></li>
-              <li class="item"><a href="" class="link">E-sign Consent</a></li>
-              <li class="item"><a href="" class="link">GDPR Compliance</a></li>
-              <li class="item">
-                <a href="" class="link"
-                  >FINRA BrokerCheck - Carta Securities, LLC</a
-                >
-              </li>
-              <li class="item">
-                <a href="" class="link"
-                  >FINRA BrokerCheck - Carta Capital Markets, LLC</a
-                >
-              </li>
-              <li class="item"><a href="" class="link">Supplier Terms</a></li>
-
-              <li class="item title">Security</li>
-              <li class="item">
-                <a href="" class="link">Responsible Disclosure Policy</a>
-              </li>
-            </ul>
+            <div class="list-container item">
+              <ul class="footer-list">
+                <li class="item title">Company</li>
+                <li class="item"><a href="" class="link">About Us</a></li>
+                <li class="item"><a href="" class="link">Executive team</a></li>
+                <li class="item"><a href="" class="link">Careers</a></li>
+                <li class="item"><a href="" class="link">Press</a></li>
+                <li class="item">
+                  <a href="" class="link">Support Documentation</a>
+                </li>
+                <li class="item">
+                  <a href="" class="link">Product Release Notes</a>
+                </li>
+              </ul>
+              <ul class="footer-list">
+                <li class="item title">Legal</li>
+                <li class="item"><a href="" class="link">Privacy Policy</a></li>
+                <li class="item"><a href="" class="link">Cookie Policy</a></li>
+                <li class="item">
+                  <a href="" class="link">Legal Disclosure</a>
+                </li>
+                <li class="item">
+                  <a href="" class="link">Terms of Service</a>
+                </li>
+                <li class="item"><a href="" class="link">E-sign Consent</a></li>
+                <li class="item">
+                  <a href="" class="link">GDPR Compliance</a>
+                </li>
+                <li class="item">
+                  <a href="" class="link">
+                    FINRA BrokerCheck - Carta Securities, LLC
+                  </a>
+                </li>
+                <li class="item">
+                  <a href="" class="link">
+                    FINRA BrokerCheck - Carta Capital Markets, LLC
+                  </a>
+                </li>
+                <li class="item"><a href="" class="link">Supplier Terms</a></li>
+              </ul>
+              <ul class="footer-list">
+                <li class="item title">Security</li>
+                <li class="item">
+                  <a href="" class="link">Responsible Disclosure Policy</a>
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="media-container">
             <img src="./img/svg/ios-play-badge.svg" alt="" class="app" />

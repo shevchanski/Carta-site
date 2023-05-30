@@ -1,0 +1,23 @@
+.brand-list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 80px;
+}
+
+.brand-list .item {
+  max-width: 145px;
+  max-height: 145px;
+}
+
+@media screen and (max-width: 768px) {
+  .brand-list {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .brand-list {
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+}

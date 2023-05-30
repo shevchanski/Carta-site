@@ -12,3 +12,28 @@
 .media-container .app:first-child {
   margin-right: 8px;
 }
+
+@media screen and (max-width: 768px) {
+  .media-container {
+    justify-content: center;
+    margin-top: 45px;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .media-container {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    margin-top: 0;
+  }
+  .media-container > *:not(:first-child) {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .media-container .app:first-child {
+    margin-right: 0;
+  }
+  .media-container .app:not(:first-child) {
+    margin-right: 0;
+  }
+}

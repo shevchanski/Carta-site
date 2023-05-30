@@ -21,27 +21,29 @@ footer.section {
   display: flex;
   justify-content: space-between;
 }
-.footer-list {
+.footer .list-container {
+  flex-direction: column;
+}
+.footer .list-container .footer-list:not(:last-child) {
+  margin-bottom: 40px;
+}
+.footer .list-box > * {
   flex-grow: 0;
   flex-shrink: 0;
   flex-basis: calc(100% / 5);
 }
-.footer-list .item {
+.footer .footer-list .item {
   font-size: 16px;
   line-height: 18.4px;
 }
-.footer-list .item:not(:last-child) {
+.footer .footer-list .item:not(:last-child) {
   margin-bottom: 15px;
 }
 
-.footer-list .title {
+.footer .footer-list .item.title {
   text-transform: uppercase;
   margin-bottom: 25px;
   color: #fff;
-}
-
-.footer-list .title:not(:first-child) {
-  margin-top: 40px;
 }
 
 .footer .footer-policy {
@@ -53,4 +55,67 @@ footer.section {
 }
 .footer .footer-policy .policy {
   flex-basis: 45%;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .footer .item {
+    flex-wrap: wrap;
+  }
+  .footer .footer-list,
+  .footer .list-container {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: calc(100% / 3);
+    margin-bottom: 50px;
+  }
+  .footer .list-container .footer-list {
+    margin-bottom: 0;
+  }
+  .footer .list-box .list-container {
+    flex-basis: 100%;
+    margin-bottom: 0;
+    flex-direction: row;
+  }
+  .footer .footer-policy {
+    margin-bottom: 50px;
+  }
+  .footer .footer-policy .policy {
+    flex-basis: 48%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer .footer-list,
+  .footer .list-container {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: calc(100% / 2);
+    margin-bottom: 50px;
+  }
+  .footer .list-box .list-container {
+    margin-bottom: 50px;
+  }
+  .footer .item {
+    flex-wrap: wrap;
+  }
+  .footer .footer-policy {
+    flex-direction: column;
+  }
+  .footer .footer-policy .policy {
+    flex-basis: auto;
+  }
+  .footer .footer-policy .policy:not(:last-child) {
+    margin-bottom: 35px;
+  }
 }

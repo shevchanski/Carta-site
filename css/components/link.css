@@ -34,3 +34,30 @@
   flex-direction: row;
   align-items: center;
 }
+
+@media screen and (max-width: 768px) {
+  .link {
+    font-size: 13px;
+  }
+
+  .link.btn-shape {
+    height: 38px;
+    width: 130px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .link {
+    font-size: 14px;
+  }
+
+  .link.btn-shape {
+    height: 48px;
+    width: 159px;
+  }
+  .link .link-arrow {
+    margin-left: 5px;
+    height: 12px;
+    width: 17px;
+  }
+}

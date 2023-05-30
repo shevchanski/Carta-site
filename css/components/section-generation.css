@@ -20,3 +20,30 @@
   font-size: 16px;
   line-height: 18.4px;
 }
+
+@media screen and (max-width: 768px) {
+  .generation-section.section {
+    margin-bottom: 50px;
+  }
+  .generation-section .quantity {
+    font-size: 49px;
+    height: 73px;
+    width: 280px;
+  }
+  .generation-section .quantity-label {
+    font-size: 12px;
+    line-height: 18.4px;
+  }
+}
+/* 
+@media screen and (max-width: 480px) {
+  .generation-section .quantity {
+    font-size: 49px;
+    height: 73px;
+    width: 280px;
+  }
+  .generation-section .quantity-label {
+    font-size: 12px;
+    line-height: 18.4px;
+  }
+} */

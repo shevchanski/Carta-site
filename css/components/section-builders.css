@@ -1,3 +1,14 @@
 .builders-section.section {
   margin-bottom: 190px;
 }
+
+@media screen and (max-width: 768px) {
+  .builders-section.section {
+    margin-bottom: 130px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .builders-section.section {
+    margin-bottom: 100px;
+  }
+}

@@ -6,8 +6,6 @@
   color: #000;
   text-align: center;
   margin-bottom: 45px;
-  /* padding-left: 10%;
-  padding-right: 10%; */
 }
 
 .section .desc {
@@ -20,4 +18,38 @@
 .section > .desc {
   padding-left: 15%;
   padding-right: 15%;
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    margin-bottom: 100px;
+  }
+
+  .section .title {
+    text-align: center;
+    margin-bottom: 35px;
+  }
+
+  .section .desc {
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section {
+    margin-bottom: 90px;
+  }
+
+  .section .title {
+    text-align: center;
+    margin-bottom: 45px;
+  }
+
+  .section .desc {
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 40px;
+  }
 }

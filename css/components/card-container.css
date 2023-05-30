@@ -36,3 +36,33 @@
   width: 214px;
   margin-right: 25px;
 }
+
+@media screen and (max-width: 480px) {
+  .card-container {
+    flex-wrap: nowrap;
+    width: 60%;
+  }
+  .card-container .card {
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 40%;
+    padding-bottom: 30px;
+  }
+  .card-container .card:not(:last-child) {
+    margin-bottom: 35px;
+    border-bottom: 1px solid #aaaaaa;
+  }
+  .card-container .card > * {
+    flex-basis: 60%;
+    flex-grow: 0;
+    align-items: center;
+  }
+  .card-container .card .img {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .card-container .card .link {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
