@@ -1,0 +1,14 @@
+.managment-section.section {
+  background-color: #e2eef3;
+  padding-top: 120px;
+  margin-bottom: 135px;
+}
+
+.managment-section.section > .title {
+  margin-bottom: 120px;
+}
+
+.managment-section.section .img {
+  width: 441px;
+  height: 331px;
+}

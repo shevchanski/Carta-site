@@ -1,0 +1,8 @@
+.nav .list {
+  display: flex;
+  align-items: center;
+}
+
+.nav .list .item:not(:last-child) {
+  margin-right: 60px;
+}

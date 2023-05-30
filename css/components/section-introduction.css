@@ -1,0 +1,25 @@
+.introduction-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.introduction-section > * {
+  flex-shrink: 1;
+  flex-grow: 0;
+  width: 261px;
+}
+
+.introduction-section .main-block {
+  flex-basis: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.introduction-section .img-box .img {
+  width: 261px;
+}
+.introduction-section .img-box .img:not(:last-child) {
+  margin-bottom: 25px;
+}

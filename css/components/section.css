@@ -1,0 +1,23 @@
+.section {
+  margin-bottom: 150px;
+}
+
+.section .title {
+  color: #000;
+  text-align: center;
+  margin-bottom: 45px;
+  /* padding-left: 10%;
+  padding-right: 10%; */
+}
+
+.section .desc {
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #242424;
+  margin-bottom: 45px;
+}
+.section > .desc {
+  padding-left: 30%;
+  padding-right: 30%;
+}

@@ -1,0 +1,27 @@
+.description-box {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 90px;
+}
+
+.description-box > * {
+  flex-basis: 40%;
+  flex-shrink: 1;
+}
+.description-box .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.description-box > .info > *:not(:last-child) {
+  text-align: left;
+}
+.description-box > *:last-child {
+  text-align: right;
+}
+
+.description-box .info .title,
+.description-box .info .desc {
+  margin-bottom: 15px;
+}

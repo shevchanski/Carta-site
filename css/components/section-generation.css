@@ -1,0 +1,22 @@
+.generation-section.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.generation-section .quantity {
+  display: inline-block;
+  height: 93px;
+  width: 388px;
+  font-size: 69px;
+  text-align: center;
+  border: 3px solid #000;
+  vertical-align: center;
+  margin-bottom: 6px;
+}
+
+.generation-section .quantity-label {
+  font-size: 16px;
+  line-height: 18.4px;
+}
