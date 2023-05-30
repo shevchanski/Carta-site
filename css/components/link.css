@@ -21,18 +21,16 @@
   color: #000;
 }
 
-.link .link-arrow {
-  /* margin-top: 11px;
-  margin-bottom: 11px; */
-  margin-left: 10px;
-  height: 18px;
-  width: 23px;
-}
-
-.link.d-flex {
+.link.link-arrow {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.link .arrow-icon {
+  margin-left: 10px;
+  height: 18px;
+  width: 23px;
 }
 
 @media screen and (max-width: 768px) {
@@ -55,7 +53,7 @@
     height: 48px;
     width: 159px;
   }
-  .link .link-arrow {
+  .link .arrow-icon {
     margin-left: 5px;
     height: 12px;
     width: 17px;
