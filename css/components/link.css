@@ -1,61 +1,74 @@
 .link {
-  font-size: 15px;
-  line-height: 18px;
-  font-weight: 400;
-  display: inline-block;
+	font-size: 15px;
+	line-height: 18px;
+	font-weight: 400;
+	display: inline-block;
 }
 
 .link.btn-shape {
-  height: 48px;
-  width: 159px;
-  background-color: #000;
-  border-radius: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  /* line-height: 48px; */
+	height: 48px;
+	width: 159px;
+	background-color: #000;
+	border-radius: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	/* line-height: 48px; */
 }
+
 .link.btn-shape.white {
-  background-color: #fff;
-  color: #000;
+	background-color: #fff;
+	color: #000;
 }
 
 .link.link-arrow {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 }
 
 .link .arrow-icon {
-  margin-left: 10px;
-  height: 18px;
-  width: 23px;
+	margin-left: 10px;
+	height: 18px;
+	width: 23px;
 }
 
 @media screen and (max-width: 768px) {
-  .link {
-    font-size: 13px;
-  }
+	.link {
+		font-size: 13px;
+	}
 
-  .link.btn-shape {
-    height: 38px;
-    width: 130px;
-  }
+	.link.btn-shape {
+		height: 38px;
+		width: 130px;
+	}
 }
 
 @media screen and (max-width: 480px) {
-  .link {
-    font-size: 14px;
-  }
+	.link {
+		font-size: 14px;
+	}
 
-  .link.btn-shape {
-    height: 48px;
-    width: 159px;
-  }
-  .link .arrow-icon {
-    margin-left: 5px;
-    height: 12px;
-    width: 17px;
-  }
+	.link.btn-shape {
+		height: 48px;
+		width: 159px;
+	}
+
+	.link .arrow-icon {
+		margin-left: 5px;
+		height: 12px;
+		width: 17px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.link {
+		font-size: 13px;
+	}
+
+	.link.btn-shape {
+		height: 38px;
+		width: 129px;
+	}
 }
